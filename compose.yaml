@@ -1,0 +1,8 @@
+services:
+  api:
+    build:
+      context: ./my_fastapi_project
+      dockerfile: Dockerfile.dev
+    container_name: dev_container
+    ports:
+      - "8000:8000"
